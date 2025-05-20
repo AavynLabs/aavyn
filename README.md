@@ -1,32 +1,63 @@
 # Aavyn
 
-A modern web application built with cutting-edge technologies to provide a seamless user experience.
+A modern, feature-rich web application built with React, TypeScript, and shadcn/ui. This project showcases a beautiful landing page with testimonials, pricing sections, and a responsive navigation system.
 
 ## 🚀 Features
 
-- Modern React with TypeScript
-- Beautiful UI components with shadcn/ui
-- Responsive design with Tailwind CSS
-- Form handling with React Hook Form
-- Data visualization with Recharts
-- Animations with Framer Motion
-- Toast notifications with Sonner
-- Theme support with next-themes
-- And much more!
+- **Modern Landing Page**
+  - Responsive navigation with mobile menu
+  - Testimonials section with carousel
+  - Pricing plans with comparison
+  - Logo carousel for partners/clients
+  - Footer with social links and navigation
+
+- **Technical Features**
+  - React 18 with TypeScript
+  - Vite for lightning-fast development
+  - React Router for navigation
+  - React Query for data fetching
+  - Tailwind CSS for styling
+  - shadcn/ui components
+  - Toast notifications (Sonner)
+  - Tooltips and UI feedback
+  - Responsive design
 
 ## 🛠️ Tech Stack
 
-- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
-- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [TypeScript](https://www.typescriptlang.org/) - JavaScript with syntax for types
-- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
-- [shadcn/ui](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
-- [React Router](https://reactrouter.com/) - Declarative routing for React
-- [React Query](https://tanstack.com/query/latest) - Powerful asynchronous state management
-- [Zod](https://zod.dev/) - TypeScript-first schema validation
-- [Framer Motion](https://www.framer.com/motion/) - Production-ready motion library
+- **Core**
+  - [React](https://reactjs.org/) - UI Library
+  - [TypeScript](https://www.typescriptlang.org/) - Type Safety
+  - [Vite](https://vitejs.dev/) - Build Tool
+  - [React Router](https://reactrouter.com/) - Routing
+  - [React Query](https://tanstack.com/query/latest) - Data Fetching
 
-## 📦 Installation
+- **Styling & UI**
+  - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+  - [shadcn/ui](https://ui.shadcn.com/) - UI Components
+  - [Radix UI](https://www.radix-ui.com/) - Headless Components
+  - [Lucide Icons](https://lucide.dev/) - Icon Set
+
+- **Development**
+  - [ESLint](https://eslint.org/) - Code Linting
+  - [TypeScript](https://www.typescriptlang.org/) - Type Checking
+  - [PostCSS](https://postcss.org/) - CSS Processing
+
+## 📦 Project Structure
+
+```
+src/
+├── components/          # Reusable components
+│   ├── ui/             # shadcn/ui components
+│   ├── features/       # Feature-specific components
+│   └── pricing/        # Pricing-related components
+├── pages/              # Page components
+├── lib/                # Utility functions
+├── hooks/              # Custom React hooks
+├── config/             # Configuration files
+└── App.tsx            # Main application component
+```
+
+## 🚀 Getting Started
 
 1. **Clone the repository**
    ```bash
@@ -64,36 +95,28 @@ A modern web application built with cutting-edge technologies to provide a seaml
    bun dev
    ```
 
-The application will be available at `http://localhost:5173` by default.
+The application will be available at `http://localhost:5173`.
 
 ## 🏗️ Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run build:dev` - Build for development
-- `npm run preview` - Preview production build locally
+- `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
 ## 🎨 UI Components
 
-This project uses shadcn/ui, which provides a collection of re-usable components built with Radix UI and Tailwind CSS. The components are:
+The project uses a combination of custom components and shadcn/ui components:
 
-- Accordion
-- Alert Dialog
-- Avatar
-- Checkbox
-- Dialog
-- Dropdown Menu
-- Navigation Menu
-- Popover
-- Progress
-- Radio Group
-- Select
-- Slider
-- Switch
-- Tabs
-- Toast
-- And many more!
+- Navigation bar with mobile menu
+- Testimonials carousel
+- Pricing cards
+- Logo carousel
+- Footer with social links
+- Toast notifications
+- Tooltips
+- And more...
 
 ## 📝 Code Quality
 
@@ -104,7 +127,11 @@ This project uses shadcn/ui, which provides a collection of re-usable components
 
 ## 🤝 Contributing
 
-We welcome contributions! Please feel free to submit a Pull Request.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📄 License
 
