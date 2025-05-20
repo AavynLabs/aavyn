@@ -1,6 +1,5 @@
-# Stable AAVYN - RWA T-Bill Vaults
-
-Stable AAVYN is a revolutionary DeFi platform that brings traditional Treasury Bills (T-Bills) on-chain, offering users a secure and efficient way to earn stable yields while maintaining global spending capabilities.
+AAVYN
+revolutionary DeFi platform that brings traditional Treasury Bills (T-Bills) on-chain, offering users a secure and efficient way to earn stable yields while maintaining global spending capabilities.
 
 ## 🌟 Key Features
 
@@ -88,14 +87,3 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Support
-
-- [Documentation](https://docs.stable-aavyn.com)
-- [Discord Community](https://discord.gg/stable-aavyn)
-- [Twitter](https://twitter.com/stable-aavyn)
-- [Email Support](support@stable-aavyn.com)
-
-## ⚠️ Disclaimer
-
-This software is for educational purposes only. Do your own research before investing. Past performance is not indicative of future results.
