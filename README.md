@@ -1,183 +1,101 @@
-# Aavyn
+# Stable AAVYN - RWA T-Bill Vaults
 
-A modern, feature-rich web application built with React, TypeScript, and shadcn/ui. This project showcases a beautiful landing page with testimonials, pricing sections, and a responsive navigation system.
+Stable AAVYN is a revolutionary DeFi platform that brings traditional Treasury Bills (T-Bills) on-chain, offering users a secure and efficient way to earn stable yields while maintaining global spending capabilities.
 
-## 🚀 Features
+## 🌟 Key Features
 
-- **Modern Landing Page**
-  - Responsive navigation with mobile menu
-  - Testimonials section with carousel
-  - Pricing plans with comparison
-  - Logo carousel for partners/clients
-  - Footer with social links and navigation
-
-- **Technical Features**
-  - React 18 with TypeScript
-  - Vite for lightning-fast development
-  - React Router for navigation
-  - React Query for data fetching
-  - Tailwind CSS for styling
-  - shadcn/ui components
-  - Toast notifications (Sonner)
-  - Tooltips and UI feedback
-  - Responsive design
-
-## 🛠️ Tech Stack
-
-- **Core**
-  - [React](https://reactjs.org/) - UI Library
-  - [TypeScript](https://www.typescriptlang.org/) - Type Safety
-  - [Vite](https://vitejs.dev/) - Build Tool
-  - [React Router](https://reactrouter.com/) - Routing
-  - [React Query](https://tanstack.com/query/latest) - Data Fetching
-
-- **Styling & UI**
-  - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
-  - [shadcn/ui](https://ui.shadcn.com/) - UI Components
-  - [Radix UI](https://www.radix-ui.com/) - Headless Components
-  - [Lucide Icons](https://lucide.dev/) - Icon Set
-
-- **Development**
-  - [ESLint](https://eslint.org/) - Code Linting
-  - [TypeScript](https://www.typescriptlang.org/) - Type Checking
-  - [PostCSS](https://postcss.org/) - CSS Processing
-
-## 📦 Project Structure
-
-```
-src/
-├── components/          # Reusable components
-│   ├── ui/             # shadcn/ui components
-│   ├── features/       # Feature-specific components
-│   └── pricing/        # Pricing-related components
-├── pages/              # Page components
-├── lib/                # Utility functions
-├── hooks/              # Custom React hooks
-├── config/             # Configuration files
-└── App.tsx            # Main application component
-```
+- **Tokenized T-Bills**: Access US Treasury Bills directly on-chain
+- **SynthUSD**: Fiat-backed on-chain USD with stable yields
+- **Delta-Neutral Algorithm**: Advanced yield optimization engine
+- **Smart Wallet Integration**: Seamless global spending capabilities
+- **High APY**: Earn 6-12% APY on your stable assets
+- **Quick Onboarding**: Get started in just 60 seconds
 
 ## 🚀 Getting Started
 
-### Prerequisites
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/stable-aavyn.git
+cd stable-aavyn
+```
 
-- Node.js (v18 or higher recommended)
-- npm, yarn, pnpm, or bun package manager
+2. Install dependencies:
+```bash
+yarn install
+```
 
-### Installation
+3. Start the development server:
+```bash
+yarn dev
+```
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/AavynLabs/aavyn.git
-   cd aavyn
-   ```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-2. **Install dependencies**
+## 💡 How It Works
 
-   Using npm (recommended):
-   ```bash
-   npm install
-   ```
+### T-Bill Vaults
+Our platform tokenizes US Treasury Bills, allowing users to:
+- Access traditional financial instruments on-chain
+- Earn stable yields backed by US government securities
+- Maintain full liquidity and flexibility
 
-   Using yarn:
-   ```bash
-   # First, ensure you have the latest yarn version
-   yarn set version 4.9.1
-   # Then install dependencies
-   yarn install
-   ```
+### SynthUSD
+A fiat-backed stablecoin that:
+- Maintains 1:1 USD backing
+- Offers competitive yields through our delta-neutral algorithm
+- Provides instant global spending capabilities
 
-   Using pnpm:
-   ```bash
-   pnpm install
-   ```
+### Smart Wallet
+Integrated smart wallet features:
+- Instant global payments
+- Seamless integration with traditional payment networks
+- Real-time yield tracking and management
 
-   Using bun:
-   ```bash
-   bun install
-   ```
+## 🔒 Security
 
-3. **Start the development server**
-   ```bash
-   # Using npm
-   npm run dev
+- Audited smart contracts
+- Multi-signature treasury management
+- Regular security assessments
+- Transparent operations
 
-   # Using yarn
-   yarn dev
+## 🛠️ Technology Stack
 
-   # Using pnpm
-   pnpm dev
+- **Frontend**: React, TypeScript, Vite
+- **UI Components**: Shadcn UI, Tailwind CSS
+- **State Management**: React Query
+- **Form Handling**: React Hook Form, Zod
+- **Data Visualization**: Recharts
+- **Animations**: Framer Motion
 
-   # Using bun
-   bun dev
-   ```
+## 📈 Yield Generation
 
-The application will be available at `http://localhost:5173`.
+Our delta-neutral algorithm:
+- Optimizes yield through multiple strategies
+- Maintains stable returns regardless of market conditions
+- Automatically rebalances positions for maximum efficiency
 
-### Troubleshooting
+## 🌐 Global Access
 
-If you encounter any issues during installation:
-
-1. **Clear package manager cache:**
-   ```bash
-   # For npm
-   npm cache clean --force
-
-   # For yarn
-   yarn cache clean
-
-   # For pnpm
-   pnpm store prune
-   ```
-
-2. **Delete node_modules and reinstall:**
-   ```bash
-   rm -rf node_modules
-   rm package-lock.json # or yarn.lock, or pnpm-lock.yaml
-   npm install # or yarn install, or pnpm install
-   ```
-
-3. **Ensure correct Node.js version:**
-   ```bash
-   node -v # Should be v18 or higher
-   ```
-
-## 🏗️ Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run build:dev` - Build for development
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-
-## 🎨 UI Components
-
-The project uses a combination of custom components and shadcn/ui components:
-
-- Navigation bar with mobile menu
-- Testimonials carousel
-- Pricing cards
-- Logo carousel
-- Footer with social links
-- Toast notifications
-- Tooltips
-- And more...
-
-## 📝 Code Quality
-
-- ESLint for code linting
-- TypeScript for type safety
-- Prettier for code formatting
-- Husky for git hooks
+- Available worldwide
+- Multi-currency support
+- Instant cross-border transactions
+- 24/7 platform access
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support
+
+- [Documentation](https://docs.stable-aavyn.com)
+- [Discord Community](https://discord.gg/stable-aavyn)
+- [Twitter](https://twitter.com/stable-aavyn)
+- [Email Support](support@stable-aavyn.com)
+
+## ⚠️ Disclaimer
+
+This software is for educational purposes only. Do your own research before investing. Past performance is not indicative of future results.
