@@ -1,14 +1,12 @@
+
 import { motion } from "framer-motion";
 import { ArrowRight, Command, Shield, Globe, Banknote, CheckCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
-import { PricingSection } from "@/components/pricing/PricingSection";
 import LogoCarousel from "@/components/LogoCarousel";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
@@ -242,16 +240,6 @@ const Index = () => {
       {/* Features Grid */}
       <div id="features" className="bg-black">
         <FeaturesSection />
-      </div>
-
-      {/* Pricing Section */}
-      <div id="pricing" className="bg-black">
-        <PricingSection />
-      </div>
-
-      {/* Testimonials Section */}
-      <div className="bg-black">
-        <TestimonialsSection />
       </div>
 
       {/* Roadmap Section */}
