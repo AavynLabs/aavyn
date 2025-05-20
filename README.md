@@ -59,6 +59,13 @@ src/
 
 ## 🚀 Getting Started
 
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm, yarn, pnpm, or bun package manager
+
+### Installation
+
 1. **Clone the repository**
    ```bash
    git clone https://github.com/AavynLabs/aavyn.git
@@ -66,17 +73,27 @@ src/
    ```
 
 2. **Install dependencies**
+
+   Using npm (recommended):
    ```bash
-   # Using npm
    npm install
+   ```
 
-   # Using yarn
+   Using yarn:
+   ```bash
+   # First, ensure you have the latest yarn version
+   yarn set version 4.9.1
+   # Then install dependencies
    yarn install
+   ```
 
-   # Using pnpm
+   Using pnpm:
+   ```bash
    pnpm install
+   ```
 
-   # Using bun
+   Using bun:
+   ```bash
    bun install
    ```
 
@@ -96,6 +113,34 @@ src/
    ```
 
 The application will be available at `http://localhost:5173`.
+
+### Troubleshooting
+
+If you encounter any issues during installation:
+
+1. **Clear package manager cache:**
+   ```bash
+   # For npm
+   npm cache clean --force
+
+   # For yarn
+   yarn cache clean
+
+   # For pnpm
+   pnpm store prune
+   ```
+
+2. **Delete node_modules and reinstall:**
+   ```bash
+   rm -rf node_modules
+   rm package-lock.json # or yarn.lock, or pnpm-lock.yaml
+   npm install # or yarn install, or pnpm install
+   ```
+
+3. **Ensure correct Node.js version:**
+   ```bash
+   node -v # Should be v18 or higher
+   ```
 
 ## 🏗️ Available Scripts
 
