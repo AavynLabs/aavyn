@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -12,7 +13,7 @@ const PricingTier = ({
 }: {
   name: string;
   price: string;
-  description: string;
+  description?: string;
   features: string[];
   isPopular?: boolean;
 }) => (
@@ -26,19 +27,19 @@ const PricingTier = ({
       <h3 className="text-xl font-medium mb-2">{name}</h3>
       <div className="mb-4">
         <span className="text-4xl font-bold">{price}</span>
-        {price !== "Custom" && <span className="text-gray-400">/month</span>}
+        {price !== "Custom" && <span className="text-gray-400">/mo</span>}
       </div>
-      <p className="text-gray-400 mb-6">{description}</p>
+      {description && <p className="text-gray-400 mb-6">{description}</p>}
       <ul className="space-y-3 mb-8 flex-grow">
         {features.map((feature, index) => (
-          <li key={index} className="flex items-center gap-2">
-            <Check className="w-5 h-5 text-primary" />
+          <li key={index} className="flex items-start gap-2">
+            <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
             <span className="text-sm text-gray-300">{feature}</span>
           </li>
         ))}
       </ul>
       <Button className="button-gradient w-full">
-        Start Trading
+        Start Earning
       </Button>
     </div>
   </CardSpotlight>
@@ -55,7 +56,7 @@ export const PricingSection = () => {
           className="text-5xl md:text-6xl font-normal mb-6"
         >
           Choose Your{" "}
-          <span className="text-gradient font-medium">Trading Plan</span>
+          <span className="text-gradient font-medium">Banking Plan</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -63,46 +64,39 @@ export const PricingSection = () => {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="text-lg text-gray-400"
         >
-          Select the perfect trading plan with advanced features and competitive fees
+          Select the perfect plan with advanced features and high-yield returns
         </motion.p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <PricingTier
-          name="Basic Trader"
+          name="Starter"
           price="$0"
-          description="Perfect for beginners starting their crypto journey"
           features={[
-            "Basic spot trading",
-            "Market & limit orders",
-            "Basic market analysis",
+            "USDC wallet & Yield Dashboard",
+            "Basic cash-in/out via Ramp",
             "Email support"
           ]}
         />
         <PricingTier
-          name="Pro Trader"
-          price="$29"
-          description="Advanced features for serious traders"
+          name="Pro"
+          price="$12"
           features={[
-            "Advanced trading tools",
-            "Margin trading up to 10x",
-            "Advanced technical analysis",
-            "Priority support",
-            "API access"
+            "Everything in Starter",
+            "Access SynthUSD + AutoPay",
+            "Agent cash-out network",
+            "Priority chat support"
           ]}
           isPopular
         />
         <PricingTier
           name="Institutional"
           price="Custom"
-          description="Enterprise-grade solutions for institutions"
           features={[
-            "Custom trading solutions",
-            "Unlimited trading volume",
-            "OTC desk access",
+            "Unlimited volume",
+            "Treasury & API access",
             "Dedicated account manager",
-            "Custom API integration",
-            "24/7 priority support"
+            "24/7 OTC desk"
           ]}
         />
       </div>
