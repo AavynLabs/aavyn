@@ -48,11 +48,15 @@ const Index = () => {
         <div className="max-w-4xl relative z-10">
           <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight text-left">
             <span className="text-gray-200">
-              <TextGenerateEffect words="The Future of Dollars —" />
+              <TextGenerateEffect words="Fully backed fiat‑on‑chain dollars" />
             </span>
             <br />
             <span className="text-white font-medium">
-              <TextGenerateEffect words="Compliant, Yield-Optimised, Yours." />
+              <TextGenerateEffect words="Permissioned RWA vaults" />
+            </span>
+            <br />
+            <span className="text-white font-medium">
+              <TextGenerateEffect words="Delta‑neutral algorithmic modul" />
             </span>
           </h1>
           
