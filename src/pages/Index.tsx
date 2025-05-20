@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { ArrowRight, Command, Shield, Globe, Banknote, CheckCircle } from "lucide-react";
+import { ArrowRight, Command, Shield, Globe, Banknote, CheckCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
@@ -13,6 +13,10 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
+  const handleWaitlistClick = () => {
+    window.location.href = "mailto:aavyn.labs@gmail.com?subject=Waitlist Request&body=I'd like to join the Aavyn Labs waitlist.";
+  };
+
   return (
     <div className="min-h-screen bg-black text-foreground">
       <Navigation />
@@ -98,7 +102,7 @@ const Index = () => {
           <div className="glass rounded-xl overflow-hidden">
             <img
               src="/lovable-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png"
-              alt="StableBank 2.0 Dashboard"
+              alt="Aavyn Labs Dashboard"
               className="w-full h-auto"
             />
           </div>
@@ -108,7 +112,7 @@ const Index = () => {
       {/* Logo Carousel */}
       <LogoCarousel />
 
-      {/* Why StableBank 2.0 Section */}
+      {/* Why Aavyn Labs Section */}
       <section className="container px-4 py-24 bg-black">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -232,43 +236,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* KPI Card Section */}
-      <section className="container px-4 py-12 bg-black">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="max-w-lg mx-auto"
-        >
-          <Card className="glass glass-hover p-8 rounded-xl border border-white/10">
-            <h3 className="text-2xl font-medium mb-6 text-center">KPI Snapshot</h3>
-            
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">Current Peg</span>
-                <span className="font-medium">$0.9993 <span className="text-green-400">(+0.01%)</span></span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">Collateral Ratio</span>
-                <span className="font-medium">152%</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">Total Deposits</span>
-                <span className="font-medium">$47,362,110</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">Proof-of-Reserve</span>
-                <span className="font-medium flex items-center">
-                  Verified <CheckCircle className="ml-1 w-4 h-4 text-green-400" /> 
-                  <span className="text-xs ml-2 text-muted-foreground">(2 min ago)</span>
-                </span>
-              </div>
-            </div>
-          </Card>
-        </motion.div>
-      </section>
-
       {/* Features Grid */}
       <div id="features" className="bg-black">
         <FeaturesSection />
@@ -357,8 +324,8 @@ const Index = () => {
             Join 50k+ early users turning idle cash into impact-driven yield.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" className="button-gradient">
-              Join Waitlist
+            <Button size="lg" className="button-gradient" onClick={handleWaitlistClick}>
+              <Mail className="mr-2 w-4 h-4" /> Join Waitlist
             </Button>
             <Button size="lg" variant="ghost" className="text-white">
               Launch Demo

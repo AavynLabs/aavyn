@@ -46,6 +46,10 @@ const Navigation = () => {
     { name: "Testimonials", href: "#testimonials", onClick: () => scrollToSection('testimonials') },
   ];
 
+  const handleWaitlistClick = () => {
+    window.location.href = "mailto:aavyn.labs@gmail.com?subject=Waitlist Request&body=I'd like to join the Aavyn Labs waitlist.";
+  };
+
   return (
     <header
       className={`fixed top-3.5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
@@ -58,7 +62,7 @@ const Navigation = () => {
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center gap-2">
             <Command className="w-5 h-5 text-primary" />
-            <span className="font-bold text-base">StableBank</span>
+            <span className="font-bold text-base">Aavyn Labs</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -79,11 +83,11 @@ const Navigation = () => {
               </a>
             ))}
             <Button 
-              onClick={() => scrollToSection('cta')}
+              onClick={handleWaitlistClick}
               size="sm"
               className="button-gradient"
             >
-              Start Earning
+              Join Waitlist
             </Button>
           </div>
 
@@ -116,11 +120,11 @@ const Navigation = () => {
                   <Button 
                     onClick={() => {
                       setIsMobileMenuOpen(false);
-                      scrollToSection('cta');
+                      handleWaitlistClick();
                     }}
                     className="button-gradient mt-4"
                   >
-                    Start Earning
+                    Join Waitlist
                   </Button>
                 </div>
               </SheetContent>

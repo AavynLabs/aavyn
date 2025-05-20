@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 const LogoCarousel = () => {
-  // Updated list of partner logos for StableBank 2.0
+  // Updated list of partner logos for Aavyn Labs
   const logos = [
     "/lovable-uploads/5830bd79-3511-41dc-af6c-8db32d91fc2c.png", // BlackRock
     "/lovable-uploads/bb50362c-6879-4868-bbc9-c6e051fd8d7d.png", // BUIDL
