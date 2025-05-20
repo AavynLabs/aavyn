@@ -56,7 +56,7 @@ export const PricingSection = () => {
           className="text-5xl md:text-6xl font-normal mb-6"
         >
           Choose Your{" "}
-          <span className="text-gradient font-medium">Banking Plan</span>
+          <span className="text-gradient font-medium">Plan</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
